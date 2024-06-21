@@ -185,7 +185,7 @@ namespace Queens_Blood_Rip_Off
             cardList.Add(GH);
             #endregion
 
-            ChangeScreen(this, new DeckScreen());
+            ChangeScreen(this, new TitleScreen());
         }
 
 

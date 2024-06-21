@@ -36,6 +36,7 @@
             this.skipButton = new System.Windows.Forms.Button();
             this.endGameTimer = new System.Windows.Forms.Timer(this.components);
             this.newCardTimer = new System.Windows.Forms.Timer(this.components);
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // gameTick
@@ -76,7 +77,7 @@
             this.skipButton.BackColor = System.Drawing.Color.Brown;
             this.skipButton.Font = new System.Drawing.Font("Mongolian Baiti", 28.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.skipButton.Location = new System.Drawing.Point(887, 599);
-            this.skipButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.skipButton.Margin = new System.Windows.Forms.Padding(2);
             this.skipButton.Name = "skipButton";
             this.skipButton.Size = new System.Drawing.Size(178, 69);
             this.skipButton.TabIndex = 3;
@@ -95,11 +96,25 @@
             this.newCardTimer.Interval = 20;
             this.newCardTimer.Tick += new System.EventHandler(this.newCardTimer_Tick);
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Brown;
+            this.button1.Font = new System.Drawing.Font("Mongolian Baiti", 28.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(371, 450);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(178, 69);
+            this.button1.TabIndex = 4;
+            this.button1.Text = "End";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // GameScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Indigo;
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.skipButton);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -124,5 +139,6 @@
         private System.Windows.Forms.Button skipButton;
         private System.Windows.Forms.Timer endGameTimer;
         private System.Windows.Forms.Timer newCardTimer;
+        private System.Windows.Forms.Button button1;
     }
 }

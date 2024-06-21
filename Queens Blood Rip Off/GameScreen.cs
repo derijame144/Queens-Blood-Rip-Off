@@ -177,6 +177,11 @@ namespace Queens_Blood_Rip_Off
             Refresh();
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
         private void gameTick_Tick(object sender, EventArgs e)
         {
             var rp = this.PointToClient(new Point(Cursor.Position.X, Cursor.Position.Y));
@@ -553,9 +558,15 @@ namespace Queens_Blood_Rip_Off
                         }
                     }
                 }
-                #endregion
-            }
 
+
+                #endregion
+
+                if (row1 == "Done" && row2 == "Done" && row3 == "Done")
+                {
+                    button1.Visible = true;
+                }
+            }
             timer++;
             Refresh();
         }
@@ -695,7 +706,7 @@ namespace Queens_Blood_Rip_Off
                     }
                 }
             }
-            else
+            else if (endGame == false && gameTick.Enabled == false)
             {
                 Card c;
                 if (newCard == "P1")

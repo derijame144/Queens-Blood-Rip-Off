@@ -146,6 +146,10 @@ namespace Queens_Blood_Rip_Off
                         x = 27;
                     }
                 }
+
+                x = 26;
+                y = 20;
+
                 foreach (Card c in p2Deck)
                 {
                     Font f = new Font(new FontFamily("Segoe Print"), 15, FontStyle.Bold, GraphicsUnit.Pixel);

@@ -19,7 +19,7 @@ namespace Queens_Blood_Rip_Off
 
         private void playButton_Click(object sender, EventArgs e)
         {
-            Form1.ChangeScreen(this, new GameScreen());
+            Form1.ChangeScreen(this, new DeckScreen());
         }
 
         private void endButton_Click(object sender, EventArgs e)
